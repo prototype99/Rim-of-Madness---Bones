@@ -5,5 +5,7 @@
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <DebugType>None</DebugType>
         <RootNamespace>BoneMod</RootNamespace>
+        <Configurations>RW1.3;RW1.4;RW1.6</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 </Project>

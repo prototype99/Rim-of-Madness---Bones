@@ -3,7 +3,7 @@
 <Project>
     <PropertyGroup>
         <Configurations>RW1.3;RW1.4</Configurations>
-        <Configuration Condition=" '$(Configuration)' == '' ">RW1.4</Configuration>
+        <Configuration Condition=" '$(Configuration)' == '' ">RW1.6</Configuration>
         <TargetFramework>net48</TargetFramework>
         <NoStdLib>true</NoStdLib>
         <LangVersion>10</LangVersion>
@@ -44,6 +44,18 @@
             </ItemGroup>
             <ItemGroup>
                 <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*"/> <!-- only stable versions -->
+            </ItemGroup>
+        </When>
+        <When Condition=" '$(Configuration)' == 'RW1.6' ">
+            <PropertyGroup>
+                <OutputPath>..\1.6\Assemblies\</OutputPath>
+            </PropertyGroup>
+
+            <ItemGroup>
+                <PackageReference Include="Lib.Harmony" Version="2.2.*" ExcludeAssets="runtime"/>
+            </ItemGroup>
+            <ItemGroup>
+                <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*"/> <!-- only stable versions -->
             </ItemGroup>
         </When>
     </Choose>
