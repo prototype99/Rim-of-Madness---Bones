@@ -44,9 +44,7 @@
 	  <MeditationFocusStrength>0.25</MeditationFocusStrength>
     </statBases>
     <stuffCategories>
-      <li>
-        Woody
-      </li>
+      <li>Woody</li>
     </stuffCategories>
     <costStuffCount>5</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
