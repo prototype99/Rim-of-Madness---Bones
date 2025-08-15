@@ -43,6 +43,7 @@
       <Flammability>0.0</Flammability>
 	  <MeditationFocusStrength>0.25</MeditationFocusStrength>
     </statBases>
+    <stuffCategories>Wood</stuffCategories>
     <costStuffCount>5</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
