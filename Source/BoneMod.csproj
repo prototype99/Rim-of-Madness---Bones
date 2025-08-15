@@ -4,6 +4,6 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <DebugType>None</DebugType>
-        <RootNamespace>Vampire</RootNamespace>
+        <RootNamespace>BoneMod</RootNamespace>
     </PropertyGroup>
 </Project>
