@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="Sihv_BuildingBase" Abstract="True">
     <category>Building</category>
@@ -50,6 +50,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <coversFloor>true</coversFloor>
+    <drawStyleCategory>Walls</drawStyleCategory>
     <tickerType>Never</tickerType>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
