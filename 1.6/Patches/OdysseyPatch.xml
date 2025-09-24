@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Scanning for isStuffableAirtight is really the only way to scan for 1.6. I have no idea why they don't have Operation Class PatchOperationFindVersion-->
+<Patch>
+  <Operation Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Wall"]/building/isStuffableAirtight</xpath>
+    <match Class="PatchOperationSequence">
+  <operations>
+	
+  <li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="BoneWall"]/building</xpath>
+    <value>
+      <isStuffableAirtight>false</isStuffableAirtight>
+    </value>
+  </li>
+	
+ <!-- <li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="BoneWall"]/building</xpath>
+    <value>
+      <drawStyleCategory>Wall</drawStyleCategory>
+    </value>
+  </li> -->
+  
+  <li Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName="BoneItem" or defName="Bonecrete" or defname="BoneChina"]/stuffProps</xpath>
+	<value>
+		<isAirtight>false</isAirtight>
+	</value>
+  </li>
+  
+  <li Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName="BonePlastic"]/stuffProps</xpath>
+	<value>
+		<isAirtight>true</isAirtight>
+	</value>
+  </li>
+  
+  </operations>
+    </match>
+	</Operation>
+</Patch>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DesignatorDropdownGroupDef>
+		<defName>BoneFurnitureRoyal</defName>
+		<label>Bone Royalty Items</label>
+	</DesignatorDropdownGroupDef>
+	
+	<ThingDef ParentName="FurnitureWithQualityBase" Name="DarkThroneBase" Abstract="True">
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<drawGUIOverlayQuality>false</drawGUIOverlayQuality>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+		<category>Building</category>
+		<hasInteractionCell>true</hasInteractionCell>
+		<thingClass>Building_Throne</thingClass>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<designatorDropdown>BoneFurnitureRoyal</designatorDropdown>
+		<pathCost>30</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MeditationFocusStrength MayRequire="Ludeon.RimWorld.Royalty">0.12</MeditationFocusStrength>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<ritualFocus>
+			<spectateDistance>2</spectateDistance>
+			<allowedSpectateSides>Up</allowedSpectateSides>
+		</ritualFocus>
+		<placeWorkers>
+			<li>PlaceWorker_RitualFocus</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>True</drawPlaceWorkersWhileSelected>
+		<comps MayRequire="Ludeon.RimWorld.Royalty">
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>true</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Throne</compClass>
+				<noAssignablePawnsDesc>Throne ownership requires a person with a royal title.</noAssignablePawnsDesc>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_ThroneSatisfiesRequirements">
+						<offset>0.08</offset>
+					</li>
+					<li Class="FocusStrengthOffset_RoomImpressiveness">
+						<curve>
+							<points>
+								<li>(0,	 -0.05)</li>
+								<li>(30,	 0.00)</li>
+								<li>(60,	 0.04)</li>
+								<li>(100,	0.08)</li>
+								<li>(170,	0.10)</li>
+							</points>
+						</curve>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="DarkThroneBase">
+		<defName>BoneChair</defName>
+		<label>bone chair</label>
+		<description>A large, ornate chair, made from bones, designed for a noble to sit and reign. Thrones define the room in which they are placed as a throneroom, and sitting on the satisfies nobles' need for authority.</description>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0.0</Flammability>
+			<Beauty>4</Beauty>
+			<Comfort>0.75</Comfort>
+		</statBases>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<costList>
+			<BoneItem>150</BoneItem>
+		</costList>
+		<fillPercent>0.40</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SkullChair/SkullChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DarkThroneBase">
+		<defName>BoneThrone</defName>
+		<label>skull throne</label>
+		<description>A grand throne, made from bones, designed for a noble to sit and reign. Thrones define the room in which they are placed as a throneroom, and sitting on the satisfies nobles' need for authority.</description>
+		<size>(3,2)</size>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>42000</WorkToBuild>
+			<Mass>100</Mass>
+			<Beauty>5</Beauty>
+			<Comfort>0.9</Comfort>
+		</statBases>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<costList>
+			<BoneItem>600</BoneItem>
+			<Skull>25</Skull>
+		</costList>
+		<fillPercent>0.45</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BoneThroneErok/BoneThrone</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+		</graphicData>
+	</ThingDef>
+</Defs>
