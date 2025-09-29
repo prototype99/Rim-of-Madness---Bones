@@ -69,6 +69,7 @@
 	  <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
 	  <supportsWallAttachments>true</supportsWallAttachments>
+      <isStuffableAirtight>false</isStuffableAirtight>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>

@@ -38,6 +38,7 @@
       <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+	  <isAirtight>false</isAirtight>
       <statFactors>
         <MaxHitPoints>0.4</MaxHitPoints>
         <Beauty>1</Beauty>
@@ -100,6 +101,7 @@
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+	  <isAirtight>false</isAirtight>
       <statFactors>
         <MaxHitPoints>2.4</MaxHitPoints>
         <Beauty>1</Beauty>
@@ -144,6 +146,7 @@
       <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+	  <isAirtight>true</isAirtight>
       <statFactors>
         <MaxHitPoints>0.75</MaxHitPoints>
         <Beauty>0.75</Beauty>
@@ -189,6 +192,7 @@
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+	  <isAirtight>false</isAirtight>
       <statOffsets>
         <Beauty>6</Beauty>
       </statOffsets>
