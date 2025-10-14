@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using RimWorld;
 using System.Reflection;
@@ -30,14 +31,9 @@ namespace BoneMod
         static void SpecialDisplayStats_PostFix(Corpse __instance, ref IEnumerable<StatDrawEntry> __result)
         {
             // Create a modifiable list
-            List<StatDrawEntry> NewList = new List<StatDrawEntry>();
+            List<StatDrawEntry> NewList = __result.ToList();
 
             // copy vanilla entries into the new list
-            foreach (StatDrawEntry entry in __result)
-            {
-                // it's possible to discard entries here if needed
-                NewList.Add(entry);
-            }
 
             // custom code to modify list contents
             StatDef BoneAmount = DefDatabase<StatDef>.GetNamed("BoneAmount", true);
@@ -58,11 +54,7 @@ namespace BoneMod
             if (boneCount > 0)
             {
 
-                List<Thing> NewList = new List<Thing>();
-                foreach (Thing entry in __result)
-                {
-                    NewList.Add(entry);
-                }
+                List<Thing> NewList = __result.ToList();
                 if (meatCountCheck > 1)
                 {
                     Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"), null);
