@@ -51,20 +51,17 @@ namespace BoneMod
         {
             int boneCount = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("BoneAmount", true), true) * BoneModSettings.boneFactor * efficiency);
             int meatCountCheck = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("MeatAmount", true), true));
-            if (boneCount > 0)
+            if (boneCount <= 0) return;
+            List<Thing> NewList = __result.ToList();
+            if (meatCountCheck > 1)
             {
-
-                List<Thing> NewList = __result.ToList();
-                if (meatCountCheck > 1)
-                {
-                    Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"), null);
-                    bones.stackCount = boneCount;
-                    NewList.Add(bones);
-                }
-                
-                IEnumerable<Thing> output = NewList;
-                __result = output;
+                Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"), null);
+                bones.stackCount = boneCount;
+                NewList.Add(bones);
             }
+                
+            IEnumerable<Thing> output = NewList;
+            __result = output;
         }
     }
 }
