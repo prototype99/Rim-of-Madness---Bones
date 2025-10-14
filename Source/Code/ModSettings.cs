@@ -27,7 +27,7 @@ namespace BoneMod
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            Listing_Standard listing = new Listing_Standard();
+            Listing_Standard listing = new();
             listing.Begin(inRect);
             // Use Widgets.Label with explicit rects to avoid relying on Listing_Standard.Label overloads that differ across RimWorld versions
             Widgets.Label(listing.GetRect(Text.LineHeight), "Multiplier");
