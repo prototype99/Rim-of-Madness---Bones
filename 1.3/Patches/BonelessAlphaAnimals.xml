@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Provided by Hiroyan -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- =====[Bases]===== -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="BaseInsect2"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="AA_AlphaBaseInsect"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="AA_PseudoBaseMechanoid"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<!-- =====[Individual Animals]===== -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_AcanthamoebaGiganteaSmall"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_AcanthamoebaGiganteaLarge"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_AcanthamoebaGiganteaHuge"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_AngelMothLarva"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_AngelMoth"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Agaripod"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Agaripawn"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_ColossalAerofleet"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Animalisk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_LarvalAtispec"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Atispec"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_AuroraSylph"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Barbslinger"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BedBug"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BlackScarab"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BlackSpelopede"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BlackSpider"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Blizzarisk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BlizzariskClutchMother"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BloodShrimp"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_SummitCrab"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Bumbledrone"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BumbledroneHierophant"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_BumbledroneQueen"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Cactipine"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_ChemfuelMyrmidon"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Cinderlisk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_CrepuscularBeetle"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_CrystalMit"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_DrainerLarva"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Drainer"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Dunealisk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_DunealiskClutchMother"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_EmpressButterflyLarva"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_EmpressButterfly"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_EngorgedTentacularAberration"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Eyeling"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Feralisk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_FeraliskClutchMother"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_FireWasp"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_FrostboundBehemoth"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Frostmite"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_GreatDevourer"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_GreenGoo"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Helixien"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_InfectedAerofleet"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_IronhuskBeetle"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Junglelisk"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_LuciferBug"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Mantrap"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_MegaLouse"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Metallovore"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Needlepost"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Needleroll"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_OcularJelly"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_PebbleMit"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Plasmorph"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_RaptorShrimp"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Ravager"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_RedGoo"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_RedSpore"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_SandSquid"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Slurrypede"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Swarmling"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_TarGuzzler"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_TeratogenicOriginator"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Terramorph"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_TetraSlug"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Thermadon"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_UnblinkingEye"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_WaywardMobileAssembler"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Wildpod"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
