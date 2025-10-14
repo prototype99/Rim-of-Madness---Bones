@@ -12,7 +12,7 @@ namespace BoneMod
     {
         static HarmonyPatches()
         {
-            var harmony = new Harmony("rimworld.Sihv.bonemod");
+            Harmony harmony = new Harmony("rimworld.Sihv.bonemod");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             harmony.Patch(
