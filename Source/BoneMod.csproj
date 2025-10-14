@@ -1,9 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <DebugType>None</DebugType>
-        <RootNamespace>Vampire</RootNamespace>
+        <Configurations>RW1.3;RW1.4;RW1.6</Configurations>
+        <Platforms>AnyCPU</Platforms>
+        <RootNamespace>BoneMod</RootNamespace>
     </PropertyGroup>
 </Project>
