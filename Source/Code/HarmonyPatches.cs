@@ -12,7 +12,7 @@ namespace BoneMod
     {
         static HarmonyPatches()
         {
-            Harmony harmony = new Harmony("rimworld.Sihv.bonemod");
+            Harmony harmony = new("rimworld.Sihv.bonemod");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             harmony.Patch(
@@ -36,9 +36,9 @@ namespace BoneMod
             // copy vanilla entries into the new list
 
             // custom code to modify list contents
-            StatDef BoneAmount = DefDatabase<StatDef>.GetNamed("BoneAmount", true);
-            float pawnBoneCount = __instance.InnerPawn.GetStatValue(BoneAmount, true) * BoneModSettings.boneFactor;
-            NewList.Add(new StatDrawEntry(BoneAmount.category, BoneAmount, pawnBoneCount, StatRequest.For(__instance.InnerPawn), ToStringNumberSense.Undefined));
+            StatDef BoneAmount = DefDatabase<StatDef>.GetNamed("BoneAmount");
+            float pawnBoneCount = __instance.InnerPawn.GetStatValue(BoneAmount) * BoneModSettings.boneFactor;
+            NewList.Add(new StatDrawEntry(BoneAmount.category, BoneAmount, pawnBoneCount, StatRequest.For(__instance.InnerPawn)));
 
             // convert list to IEnumerable to match the caller's expectations
             IEnumerable<StatDrawEntry> output = NewList;
@@ -49,13 +49,13 @@ namespace BoneMod
 
         static void ButcherProducts_PostFix(Pawn __instance, ref IEnumerable<Thing> __result, float efficiency)
         {
-            int boneCount = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("BoneAmount", true), true) * BoneModSettings.boneFactor * efficiency);
-            int meatCountCheck = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("MeatAmount", true), true));
+            int boneCount = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("BoneAmount")) * BoneModSettings.boneFactor * efficiency);
+            int meatCountCheck = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("MeatAmount")));
             if (boneCount <= 0) return;
             List<Thing> NewList = __result.ToList();
             if (meatCountCheck > 1)
             {
-                Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"), null);
+                Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"));
                 bones.stackCount = boneCount;
                 NewList.Add(bones);
             }
