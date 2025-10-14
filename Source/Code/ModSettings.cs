@@ -7,12 +7,12 @@ namespace BoneMod
 
     public class BoneModSettings : ModSettings
     {
-        public static float boneFactor = 1;
+        public static float boneFactor = 1f;
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref boneFactor, "boneFactor", 0);
+            Scribe_Values.Look(ref boneFactor, "boneFactor", 1f);
         }
 
     }
@@ -30,9 +30,10 @@ namespace BoneMod
         {
             Listing_Standard listing = new Listing_Standard();
             listing.Begin(inRect);
-            listing.Label("Multiplier");
+            // Use Widgets.Label with explicit rects to avoid relying on Listing_Standard.Label overloads that differ across RimWorld versions
+            Widgets.Label(listing.GetRect(Text.LineHeight), "Multiplier");
             BoneModSettings.boneFactor = listing.Slider(BoneModSettings.boneFactor, 0f, 10f);
-            listing.Label("ROM_SettingsBoneMultiplier_Num".Translate(BoneModSettings.boneFactor));
+            Widgets.Label(listing.GetRect(Text.LineHeight), "ROM_SettingsBoneMultiplier_Num".Translate(BoneModSettings.boneFactor));
             listing.End();
             base.DoSettingsWindowContents(inRect);
         }
