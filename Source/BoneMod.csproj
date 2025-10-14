@@ -6,6 +6,6 @@
         <DebugType>None</DebugType>
         <Configurations>RW1.3;RW1.4;RW1.6</Configurations>
         <Platforms>AnyCPU</Platforms>
-        <RootNamespace>Vampire</RootNamespace>
+        <RootNamespace>BoneMod</RootNamespace>
     </PropertyGroup>
 </Project>
