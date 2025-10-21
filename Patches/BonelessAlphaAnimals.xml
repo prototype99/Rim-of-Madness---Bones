@@ -20,12 +20,6 @@
 						<BoneAmount>0</BoneAmount>
 					</value>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="AA_PseudoBaseMechanoid"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
 				<!-- =====[Individual Animals]===== -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="AA_AcanthamoebaGiganteaSmall"]/statBases</xpath>
@@ -462,12 +456,6 @@
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="AA_UnblinkingEye"]/statBases</xpath>
-					<value>
-						<BoneAmount>0</BoneAmount>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="AA_WaywardMobileAssembler"]/statBases</xpath>
 					<value>
 						<BoneAmount>0</BoneAmount>
 					</value>
